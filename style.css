@@ -10,10 +10,10 @@
   --text-primary: #f5f0e8;
   --text-secondary: #9e9689;
   --text-muted: #5e574e;
-  --gold: #c9a44c;
-  --gold-light: #dfc06e;
-  --gold-dark: #a88530;
-  --gold-glow: rgba(201, 164, 76, 0.15);
+  --gold: #c4993c;
+  --gold-light: #d9b35c;
+  --gold-dark: #a07a28;
+  --gold-glow: rgba(196, 153, 60, 0.15);
   --red-soft: #8b3a3a;
   --border: rgba(201, 164, 76, 0.12);
   --border-light: rgba(255, 255, 255, 0.05);
@@ -53,12 +53,14 @@ ul { list-style: none; }
 
 .section-label {
   display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.3em;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gold-dark);
 }
 
 .section-title {
@@ -219,8 +221,8 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 30% 70%, rgba(201, 164, 76, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 30%, rgba(139, 58, 58, 0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at 30% 70%, rgba(196, 153, 60, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 30%, rgba(196, 153, 60, 0.04) 0%, transparent 40%),
     var(--bg-primary);
 }
 
@@ -245,31 +247,30 @@ ul { list-style: none; }
 
 .hero__logo-script {
   display: block;
-  font-family: var(--font-display);
-  font-size: clamp(4rem, 12vw, 8rem);
-  font-weight: 600;
-  font-style: italic;
+  font-family: 'Alex Brush', cursive;
+  font-size: clamp(5rem, 14vw, 10rem);
+  font-weight: 400;
   color: var(--gold);
-  line-height: 0.9;
-  letter-spacing: -0.02em;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
 }
 
 .hero__logo-sub {
   display: block;
   font-family: var(--font-body);
   font-size: 0.75rem;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 300;
   letter-spacing: 0.5em;
   text-transform: uppercase;
-  color: var(--gold);
-  margin-top: 24px;
+  color: var(--gold-dark);
+  margin-top: 16px;
 }
 
 .hero__tagline {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  font-weight: 200;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
   color: var(--text-secondary);
   margin-bottom: 24px;
   opacity: 0;
@@ -384,7 +385,8 @@ ul { list-style: none; }
   padding: 28px 32px;
   background: var(--bg-card);
   border: 1px solid var(--border-light);
-  border-radius: var(--radius);
+  border-left: 2px solid var(--gold-dark);
+  border-radius: 0;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -392,7 +394,8 @@ ul { list-style: none; }
 }
 
 .about__card:hover {
-  border-color: var(--border);
+  border-left-color: var(--gold);
+  background: var(--bg-card-hover);
   transform: translateX(8px);
 }
 
@@ -596,7 +599,7 @@ ul { list-style: none; }
   padding: 32px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border-light);
-  border-radius: var(--radius);
+  border-radius: 0;
   transition: all var(--transition);
 }
 
@@ -604,6 +607,7 @@ ul { list-style: none; }
   border-color: var(--gold);
   background: var(--bg-card-hover);
   transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(196, 153, 60, 0.08);
 }
 
 .event-card__date {
