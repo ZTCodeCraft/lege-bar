@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legé Bar & Diner | София – Коктейли, Кухня & DJ</title>
+  <meta name="description" content="Legé Bar & Diner – елегантен бар и ресторант в центъра на София. Авторски коктейли, дневно обедно меню и DJ програма всяка вечер. ул. Леге 15А.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">Legé</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">За нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#events">Програма</a></li>
+        <li><a href="#contact">Контакти</a></li>
+        <li><a href="tel:0882999222" class="nav__cta">Резервация</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__logo">
+        <span class="hero__logo-script">Legé</span>
+        <span class="hero__logo-sub">Bar & Diner</span>
+      </div>
+      <p class="hero__tagline">Коктейли · Кухня · Музика</p>
+      <div class="hero__divider"></div>
+      <p class="hero__location">ул. Леге 15А · Хотел Рила · София</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Разгледай менюто</a>
+        <a href="tel:0882999222" class="btn btn--outline">088 299 9222</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__content">
+          <span class="section-label">За нас</span>
+          <h2 class="section-title">Където денят<br>преминава в нощ</h2>
+          <p class="about__text">
+            Legé Bar & Diner е повече от бар — това е преживяване. От сутрешно кафе и бизнес обяд, през следобедни коктейли, до вечерна DJ програма с organic house и mixology сетове.
+          </p>
+          <p class="about__text">
+            Разположени в сърцето на София, в Хотел Рила, предлагаме ежедневно обедно меню с безплатна чаша вино, авторски коктейли и релаксираща атмосфера с внимание към всеки детайл.
+          </p>
+          <div class="about__highlights">
+            <div class="about__highlight">
+              <span class="about__highlight-number">9:00</span>
+              <span class="about__highlight-text">сутрин до</span>
+              <span class="about__highlight-number">2:00</span>
+              <span class="about__highlight-text">през нощта</span>
+            </div>
+            <div class="about__highlight-divider"></div>
+            <div class="about__highlight">
+              <span class="about__highlight-label">7 дни в седмицата</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="about__card about__card--top">
+            <div class="about__card-icon">🍸</div>
+            <h4>Авторски коктейли</h4>
+            <p>Крафт миксология и класики</p>
+          </div>
+          <div class="about__card about__card--mid">
+            <div class="about__card-icon">🍽</div>
+            <h4>Дневно меню</h4>
+            <p>12:00 – 15:00 с чаша вино</p>
+          </div>
+          <div class="about__card about__card--bot">
+            <div class="about__card-icon">🎧</div>
+            <h4>DJ програма</h4>
+            <p>Всяка вечер на живо</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="menu__header">
+        <span class="section-label">Меню</span>
+        <h2 class="section-title">Обедно меню</h2>
+        <p class="section-desc">Всеки ден от 12:00 до 15:00. При поръчка на салата и основно — получавате чаша вино.</p>
+      </div>
+
+      <div class="menu__daily">
+        <div class="menu__daily-date">
+          <span class="menu__daily-day">Днешното</span>
+          <span class="menu__daily-label">обедно меню</span>
+        </div>
+
+        <div class="menu__category">
+          <h3 class="menu__category-title">Супи & Салати</h3>
+          <div class="menu__items">
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Зеленчукова крем супа</h4>
+                <span class="menu__price">3.30€ <small>/ 6.44лв</small></span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Супа топчета</h4>
+                <span class="menu__price">3.90€ <small>/ 7.61лв</small></span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Спаначена салата</h4>
+                <span class="menu__price">6.50€ <small>/ 12.68лв</small></span>
+              </div>
+              <p class="menu__desc">с краставици, чери домати и синьо сирене</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__category">
+          <h3 class="menu__category-title">Основни ястия</h3>
+          <div class="menu__items">
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Миш-маш</h4>
+                <span class="menu__price">6.90€ <small>/ 13.46лв</small></span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Руло „Стефани"</h4>
+                <span class="menu__price">7.00€ <small>/ 13.66лв</small></span>
+              </div>
+              <p class="menu__desc">с картофено пюре</p>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Боб с наденица</h4>
+                <span class="menu__price">6.80€ <small>/ 13.27лв</small></span>
+              </div>
+              <p class="menu__desc">македонска</p>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Пилешка пържола от бут</h4>
+                <span class="menu__price">7.00€ <small>/ 13.66лв</small></span>
+              </div>
+              <p class="menu__desc">с микс свежи салати</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__category">
+          <h3 class="menu__category-title">Десерти</h3>
+          <div class="menu__items">
+            <div class="menu__item">
+              <div class="menu__item-header">
+                <h4>Чийзкейк</h4>
+                <span class="menu__price">3.50€ <small>/ 6.83лв</small></span>
+              </div>
+              <p class="menu__desc">със сладко от боровинки</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__wine-note">
+          <span>🍷</span>
+          <p>При поръчка на салата и основно получавате <strong>чаша вино</strong></p>
+        </div>
+      </div>
+
+      <div class="menu__note">
+        <p>Менюто се обновява ежедневно. Следете актуалните предложения в нашата <a href="https://www.facebook.com/legebar" target="_blank">Facebook страница</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="events" id="events">
+    <div class="container">
+      <div class="events__header">
+        <span class="section-label">Програма</span>
+        <h2 class="section-title">DJ & Events</h2>
+        <p class="section-desc">Всяка вечер — внимателно подбрана музика от нашите резидент и гост диджеи</p>
+      </div>
+      <div class="events__grid">
+        <div class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">ВТ</span>
+          </div>
+          <div class="event-card__info">
+            <h3>DJ Allian</h3>
+            <p>Organic House</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">СР</span>
+          </div>
+          <div class="event-card__info">
+            <h3>DJ Mishin</h3>
+            <p>BG Mixology</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">ЧТ</span>
+          </div>
+          <div class="event-card__info">
+            <h3>DJ Vivanoff</h3>
+            <p>After Work</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">ПТ</span>
+          </div>
+          <div class="event-card__info">
+            <h3>DJ Allian</h3>
+            <p>Friday Night</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">СБ</span>
+          </div>
+          <div class="event-card__info">
+            <h3>Guest DJ</h3>
+            <p>Special Set</p>
+          </div>
+        </div>
+      </div>
+      <p class="events__note">Актуалната седмична програма публикуваме в <a href="https://www.facebook.com/legebar" target="_blank">Facebook</a></p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <span class="section-label">Контакти</span>
+          <h2 class="section-title">Очакваме ви</h2>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <span>📍</span>
+              <div>
+                <h4>Адрес</h4>
+                <p>ул. Леге 15А, 1000 София</p>
+                <p class="contact__sub">в Хотел Рила</p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span>📞</span>
+              <div>
+                <h4>Телефон</h4>
+                <p><a href="tel:0882999222">088 299 9222</a></p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span>🕐</span>
+              <div>
+                <h4>Работно време</h4>
+                <p>Всеки ден: 9:00 – 2:00</p>
+                <p class="contact__sub">Обедно меню: 12:00 – 15:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact__social">
+            <a href="https://www.facebook.com/legebar" target="_blank" class="contact__social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.9!2d23.323!3d42.693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa856fae8e3e7d%3A0x6c6fdc2bb8e4f0!2z0YPQuy4g0JvQtdCz0LUgMTXQkCwgMTAwMCDQodC-0YTQuNGP!5e0!3m2!1sbg!2sbg"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <span class="footer__logo">Legé</span>
+          <span class="footer__logo-sub">Bar & Diner</span>
+        </div>
+        <div class="footer__links">
+          <a href="#about">За нас</a>
+          <a href="#menu">Меню</a>
+          <a href="#events">Програма</a>
+          <a href="#contact">Контакти</a>
+          <a href="https://www.facebook.com/legebar" target="_blank">Facebook</a>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2025 Legé Bar & Diner. Всички права запазени.</p>
+          <p class="footer__demo">Демо дизайн — не е официалният сайт</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
