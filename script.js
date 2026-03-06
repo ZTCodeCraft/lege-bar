@@ -10,10 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
 
-  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    navToggle.classList.toggle('active');
+  });
 
   navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('active');
+    });
+  });
+
+  // Close menu on outside click
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('active');
+    }
   });
 
   // Scroll reveal
